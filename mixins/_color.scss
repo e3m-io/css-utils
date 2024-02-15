@@ -1,0 +1,5 @@
+@import "../internal/colorToken";
+
+@mixin color($shade, $intensity) {
+	color: colorToken($shade, $intensity);
+}

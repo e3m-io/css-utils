@@ -1,0 +1,17 @@
+@import "../internal/colorToken";
+
+@mixin border-color($shade, $intensity) {
+	border-color: colorToken($shade, $intensity);
+}
+@mixin border-top-color($shade, $intensity) {
+	border-block-start-color: colorToken($shade, $intensity);
+}
+@mixin border-bottom-color($shade, $intensity) {
+	border-block-end-color: colorToken($shade, $intensity);
+}
+@mixin border-left-color($shade, $intensity) {
+	border-inline-start-color: colorToken($shade, $intensity);
+}
+@mixin border-right-color($shade, $intensity) {
+	border-inline-end-color: colorToken($shade, $intensity);
+}

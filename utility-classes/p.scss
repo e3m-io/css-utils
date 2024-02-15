@@ -1,0 +1,26 @@
+@use "../mixins/p" as p;
+@use "../internal/scaleToken" as scale;
+
+@each $scale in scale.$scales {
+	.p-#{$scale} {
+		@include p.p($scale);
+	}
+	.px-#{$scale} {
+		@include p.px($scale);
+	}
+	.py-#{$scale} {
+		@include p.py($scale);
+	}
+	.pt-#{$scale} {
+		@include p.pt($scale);
+	}
+	.pb-#{$scale} {
+		@include p.pb($scale);
+	}
+	.pl-#{$scale} {
+		@include p.pl($scale);
+	}
+	.pr-#{$scale} {
+		@include p.pr($scale);
+	}
+}

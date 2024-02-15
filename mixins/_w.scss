@@ -1,0 +1,5 @@
+@use "../internal/scaleToken" as scale;
+
+@mixin w($scale) {
+	inline-size: scale.getToken($scale);
+}

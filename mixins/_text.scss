@@ -1,0 +1,5 @@
+@use "../internal/textScaleToken" as textScale;
+
+@mixin text-size($size) {
+	font-size: textScale.getToken($size);
+}

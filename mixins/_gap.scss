@@ -1,0 +1,5 @@
+@use "../internal/scaleToken" as scale;
+
+@mixin gap($size) {
+	gap: scale.getToken($size);
+}

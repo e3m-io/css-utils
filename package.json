@@ -1,0 +1,10 @@
+{
+	"name": "@e3m-io/css-utils",
+	"version": "1.0.0",
+	"author": "e3m-io",
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/e3m-io/css-utils.git"
+	}
+}

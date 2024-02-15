@@ -1,0 +1,10 @@
+@import "../internal/colorToken";
+
+@mixin bg($shade, $intensity) {
+	background-color: colorToken($shade, $intensity);
+	@if $intensity > 500 {
+		color: white;
+	} @else {
+		color: black;
+	}
+}

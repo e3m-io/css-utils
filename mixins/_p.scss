@@ -1,0 +1,29 @@
+@use "../internal/scaleToken" as scale;
+
+@mixin p($scale) {
+	padding: scale.getToken($scale);
+}
+
+@mixin pl($scale) {
+	padding-inline-start: scale.getToken($scale);
+}
+
+@mixin pr($scale) {
+	padding-inline-end: scale.getToken($scale);
+}
+
+@mixin pt($scale) {
+	padding-block-start: scale.getToken($scale);
+}
+
+@mixin pb($scale) {
+	padding-block-end: scale.getToken($scale);
+}
+
+@mixin px($scale) {
+	padding-inline: scale.getToken($scale);
+}
+
+@mixin py($scale) {
+	padding-block: scale.getToken($scale);
+}
