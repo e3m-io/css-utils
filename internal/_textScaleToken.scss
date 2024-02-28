@@ -1,5 +1,0 @@
-@function getToken($scale) {
-	@return var(--text-size--#{$scale});
-}
-
-$scales: xxs, xs, sm, base, lg, xl, xxl;

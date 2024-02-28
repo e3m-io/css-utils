@@ -1,3 +1,0 @@
-@function colorToken($shade, $intensity) {
-	@return var(--color--#{$shade}--#{$intensity});
-}

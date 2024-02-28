@@ -1,8 +1,5 @@
-@use "../mixins/gap" as gap;
-@use "../internal/scaleToken" as scale;
-
 @each $scale in scale.$scales {
 	.gap-#{$scale} {
-		@include gap.gap($scale);
+		gap: var(--scale-#{$scale});
 	}
 }

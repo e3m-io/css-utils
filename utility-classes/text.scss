@@ -1,12 +1,3 @@
-@use "../mixins/text" as text;
-@use "../internal/textScaleToken" as textScale;
-
-@each $scale in textScale.$scales {
-	.text-#{$scale} {
-		@include text.text-size($scale);
-	}
-}
-
 .text-start,
 .text-left {
 	text-align: start;

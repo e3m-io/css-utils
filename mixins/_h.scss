@@ -1,5 +1,0 @@
-@use "../internal/scaleToken" as scale;
-
-@mixin h($scale) {
-	block-size: scale.getToken($scale);
-}

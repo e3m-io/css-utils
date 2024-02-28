@@ -1,27 +1,24 @@
-@use "../mixins/m" as m;
-@use "../internal/scaleToken" as scale;
-
 @each $scale in scale.$scales {
 	.m-#{$scale} {
-		@include m.m($scale);
+		margin: var(--scale-#{$scale});
 	}
 	.mx-#{$scale} {
-		@include m.mx($scale);
+		margin-inline: var(--scale-#{$scale});
 	}
 	.my-#{$scale} {
-		@include m.my($scale);
+		margin-block: var(--scale-#{$scale});
 	}
 	.mt-#{$scale} {
-		@include m.mt($scale);
+		margin-top: var(--scale-#{$scale});
 	}
 	.mb-#{$scale} {
-		@include m.mb($scale);
+		margin-bottom: var(--scale-#{$scale});
 	}
 	.ml-#{$scale} {
-		@include m.ml($scale);
+		margin-left: var(--scale-#{$scale});
 	}
 	.mr-#{$scale} {
-		@include m.mr($scale);
+		margin-right: var(--scale-#{$scale});
 	}
 }
 
@@ -38,17 +35,17 @@
 }
 
 .mt-auto {
-	margin-block-start: auto;
+	margin-top: auto;
 }
 
 .mb-auto {
-	margin-block-end: auto;
+	margin-bottom: auto;
 }
 
 .ml-auto {
-	margin-inline-start: auto;
+	margin-left: auto;
 }
 
 .mr-auto {
-	margin-inline-end: auto;
+	margin-right: auto;
 }
