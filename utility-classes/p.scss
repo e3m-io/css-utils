@@ -1,3 +1,5 @@
+@use "../internal/scales" as scale;
+
 @each $scale in scale.$scales {
 	.p-#{$scale} {
 		padding: var(--scale-#{$scale});

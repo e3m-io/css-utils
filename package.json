@@ -6,5 +6,11 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/e3m-io/css-utils.git"
+	},
+	"scripts": {
+		"prepare": "sass utility-classes/index.scss dist/index.css"
+	},
+	"devDependencies": {
+		"sass": "^1.71.1"
 	}
 }
